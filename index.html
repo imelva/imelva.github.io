@@ -16,8 +16,9 @@
 
   <!-- Custom CSS -->
   <link href="css/stylesheet.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/sunrise.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="js-plugins/magnific-popup/magnific-popup.css">
+
   <!-- Custom Fonts -->
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -35,6 +36,40 @@
 </head>
 
 <body id="page-top" class="index">
+
+  <div id="loading">
+    <div class="center-container">
+      <svg viewbox="-200 -150 400 300">
+        <defs>
+          <line id="ray" x1="-5" x2="5"></line>
+          <clipPath id="cp">
+            <rect x="-200" y="-150" width="400" height="150"></rect>
+          </clipPath>
+        </defs>
+        <line id="line" x1="-76" x2="76"></line>
+        <text text-anchor="middle" y="45">Peeking Awesomeness</text>
+        <g id="sun" clip-path="url(#cp)">
+          <g id="mover">
+            <circle id="main" r="50"></circle>
+            <g id="eyes">
+              <circle r="3" cx="-13"></circle>
+              <circle r="3" cx="13"></circle>
+            </g>
+            <g id="rays">
+              <use xlink:href="#ray" transform="rotate(315) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(270) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(225) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(180) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(135) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(90) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(45) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(0) translate(70)"></use>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </div>
+  </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-default navbar-fixed-top">
@@ -61,7 +96,7 @@
             <a class="page-scroll" href="#portfolio">Portfolio</a>
           </li>
           <li>
-            <a class="page-scroll" href="#about">Journey</a>
+            <a class="page-scroll" href="#about">My Journey</a>
           </li>
         </ul>
       </div>
@@ -74,39 +109,57 @@
   <header>
     <div class="container">
       <div class="intro-text">
-        <div class="intro-lead-in">Welcome to</div>
-        <div class="intro-heading">Elva's World</div>
-        <a href="#world" class="page-scroll btn-upright" style="text-decoration: none;">Knock Knock</a>
+        <div class="intro-title">Hi I'm Elva</div>
+        <div class="hero-container"> 
+          <div class="cover-hero-caption">I am a</div>
+          <div id="cover-hero-content">
+            <div class="cover-hero-item cover-hero-item-active">Marketer</div>
+            <div class="cover-hero-item cover-hero-item-inactive">Product Manager</div>
+            <div class="cover-hero-item cover-hero-item-inactive">Data Analyst</div>
+            <div class="cover-hero-item cover-hero-item-inactive">Entreprenur</div>
+            <div class="cover-hero-item cover-hero-item-inactive">UX Designer</div>
+            <div class="cover-hero-item cover-hero-item-inactive">Event Planner</div>
+          </div>
+        </div>
+        <div class="intro-button">
+          <a href="#world" class="page-scroll btn-upright" style="text-decoration: none;">Knock Knock</a>
+        </div>
       </div>
     </div>
   </header>
+
   <!-- About Me Section -->
   <section id="world">
     <div class="container">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Elva's World</h2>
-          <h3 class="section-subheading text-muted">The truest freedom is of the mind,a conscious act to embrace the unknown</h3>
+        <div class="col-lg-12 center-text">
+          <h2 class="section-heading">My World</h2>
+          <h3 class="section-subheading" style="font-size: 18px">The truest freedom is of the mind,a conscious act to embrace the unknown</h3>
         </div>
         <div class="row">
             <div class="col-md-5">
-              <img src="img/elva effj.png" alt="" class="about-me-img" width="250" height="250" >              
+              <img src="img/elva effj.png" alt="" class="about-me-img" width="300" height="300" >              
             </div>
             <div class="col-md-7 col-md-pull-1">
               <div class="col-md-12 col-md-push-1">  
-                <h4 class="center-text">courage, persistence & love</h4>
-                <h3 class="personality text-muted"> ENFJ, "The Giver"</h3>
-                <div class="type-snippet center-text"> 
-                  I appreciate all the good and bad encounters in my life but I've never believed in fate. Kindness has made me grateful and hardship has made me stronger. I got accepted to the Renmin University of China for journalism when I was only 11. I started hosting TV shows and provincial congress/conferences since elementary school. I volunteered teaching in rural China and found the kind of role I want to play in this world when I was 16.
-                </div>
+                <h4 class="center-text" style="font-size: 24px">courage, persistence & love</h4>
+                <h3 class="personality"> ENFJ, "The Giver"</h3>
+                <div class="type-snippet center-text" style="font-size: 16px"> 
+                  I appreciate all the good and bad encounters in my life but I've never believed in fate. The world is lovely  though some  structures aren't the best for everyone. Rather than waiting for the systems to change, I want to  build systems that would make  this world a better place, even by a little bit. As a result, I've earned many useful skills and experiences to put my love to this world in action.Yet, there's still so much unknow that I'm eager to explore  and contribute.  If you are making an impact to millions of lives with technology and a sustainable model. Talk to me! I would love to help :)</div> 
+
                 <!-- Skill Tags -->
-                <div class="skill-tag-container">
-                    <button class="btn skill-tag">Lean Startups</button>
-                    <button class="btn skill-tag">Rapid prototyping</button>
-                    <button class="btn skill-tag">User Experience</button>
-                    <button class="btn skill-tag">Social Media</button>
-                    <button class="btn skill-tag">Product Design</button>
-                    <button class="btn skill-tag">Business Development</button>
-                    <button class="btn skill-tag">Digital Distribution</button>
+                <div class="skill-tag-container">                  
+                  <button class="btn skill-tag">User Experience</button>
+                  <button class="btn skill-tag">Data Analysis</button>
+                  <button class="btn skill-tag">Project Management</button>
+                  <button class="btn skill-tag">Product Design</button>
+                  <button class="btn skill-tag">Digital Distribution</button>
+                  <button class="btn skill-tag">User Acquisition</button>
+                  <button class="btn skill-tag">Business Development</button>                 
+                  <button class="btn skill-tag">Social Media</button>                    
+                  <button class="btn skill-tag">Rapid prototyping</button>
+                  <button class="btn skill-tag">Mobile</button>
+                  <button class="btn skill-tag">Event Planning</button>
+                  <button class="btn skill-tag">Team Building/Recruitment</button>
                 </div>
               </div>
             </div>
@@ -148,12 +201,12 @@
       </div>
       <!-- Filter buttons -->  
       <div class="col-lg-12 text-center">
-        <button style="color: white" class="active btn btn-inverse" id="All">All</button>
-        <button style="color: white" class="btn" id="StartUp">My start ups</button>
-        <button style="color: white" class="btn" id="Internship">Internships</button>
-        <button style="color: white" class="btn" id="Organization">Organizations</button>
+        <button class="active btn btn-inverse" id="All">All</button>
+        <button class="btn" id="StartUp">My Startups</button>
+        <button class="btn" id="Internship">My Companies</button>
+        <button class="btn" id="Organization">Organizations</button>
       </div>
-      <p>''</p>
+      <p>&nbsp;</p>
       <!-- Grid -->
       <div class="row">
         <div id="parent">
@@ -165,7 +218,7 @@
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img src="img/My Startups/connextor.gif" class="img-responsive" alt="">
+                <img src="img/My Startups/ConNextor.gif" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
                 <h4>CEO, ConNextor</h4>
@@ -184,29 +237,29 @@
                 <img src="img/My Startups/Soapbox.gif" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
-                <h4>COO, Soapbox</h4>
+                <h4>Co-Founder, Soapbox</h4>
                 <div class="portfolio-description">
                     A skilled volunteer matching site with experiencial rewards
                 </div>
               </div>
             </div>
-            <!-- Internships -->
-            <div class="col-md-4 col-sm-6 portfolio-item box Internship">
+            <div class="col-md-4 col-sm-6 portfolio-item box StartUp">
               <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img src="img/My Startups/Spice Creation.png" class="img-responsive" alt="">
+              <img src="img/My Startups/Spice Creation.png" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
-                <h4>Marketing Coordinator, University of Waterloo</h4>
+                <h4>CEO, Spice Creation</h4>
                 <div class="portfolio-description">
-                    Planned and managed promotion strategy and events for uWaterloo Housing
-                </div>
+                   A team of 6 with 15 freelancers across design, development and marketing to deliver affordable and customized solution </div>
               </div>
             </div>
+          <!-- Internships -->
+            
             <div class="col-md-4 col-sm-6 portfolio-item box Internship">
               <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                 <div class="portfolio-hover">
@@ -214,13 +267,12 @@
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img src="img/Internships/Uken Games.jpg" class="img-responsive" alt="">
+                <img src="img/My Jobs/Uken Games.jpg" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
                 <h4>Growth Hacker, Uken Games</h4>
                 <div class="portfolio-description">
-                    Optimized and Increased Ad revenue across platforms by 40% and acquired over millions of users in less than 30 days within launch of ‘Titans'
-                </div>
+                Optimized and Increased Ad revenue across platforms by 40% and acquired millions of users </div>
               </div>
             </div>
             <div class="col-md-4 col-sm-6 portfolio-item box Internship">
@@ -230,7 +282,39 @@
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img src="img/portfolio/escape.png" class="img-responsive" alt="">
+                <img src="img/My Jobs/DYTREM.png" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>PM & Marketing Intern, DYTREM</h4>
+                <div class="portfolio-description">
+                    Managed and planned for existing projects as well as expanded new markets
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item box Internship">
+              <a href="https://uwaterloo.ca/housing/" class="portfolio-link image-iframe">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="img/My Jobs/main-1.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Marketing Coordinator, University of Waterloo</h4>
+                <div class="portfolio-description">
+                    Planned and managed promotion strategy and events for uWaterloo Housing
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item box Internship">
+              <a href="http://waterloobanking.com" class="portfolio-link image-iframe">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="img/My Jobs/ReLeaf Financial.png" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
                 <h4>Coordinator, ReLeaf Financial</h4>
@@ -241,19 +325,84 @@
             </div>
             <!-- Organization -->
             <div class="col-md-4 col-sm-6 portfolio-item box Organization">
-              <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+              <a href="http://kairossociety.com" class="portfolio-link image-iframe">
                 <div class="portfolio-hover">
                   <div class="portfolio-hover-content">
                     <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
+                <img src="img/My Organizations/kairos.png" class="img-responsive" alt="">
               </a>
               <div class="portfolio-caption">
                 <h4>Founding Community Director (Canada), Kairos Society</h4>
                 <div class="portfolio-description">
-                    Kairos Society brings the world's most influential leaders, individuals, and corporations alike together with the innovators of tomorrow to solve world challenges
+                    Kairos Society brings the world's most influential leaders &amp; corporations   with the young innovators  to solve world challenges
                 </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item box Organization">
+              <a href="http://www.nexusyouthsummit.org" class="portfolio-link image-iframe">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="img/My Organizations/Nexus Global.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Canadian Youth Representative, Nexus</h4>
+                <div class="portfolio-description">
+                    Nexus is a global movement of 2000+  investors and social entrepreneurs  to increase and make more social impact investing
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 portfolio-item box Organization">
+              <a href="https://www.communitech.ca/" class="portfolio-link image-iframe">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="img/My Organizations/communitech-1.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Entreprenur in Residence (ConNextor), Communitech</h4>
+                <div class="portfolio-description">
+                    Communitech is a technology incubator that are accelerating tomorrow’s global companies
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item box Organization">
+              <a href="http://velocity.uwaterloo.ca/" class="portfolio-link image-iframe">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="img/My Organizations/Velocity.jpg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Entreprenur in Residence, Velocity</h4>
+                <div class="portfolio-description">
+                    Velocity Residence provides resources for University of Waterloo students with a strong   entrepreneurial drive
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 portfolio-item box Organization">
+              <a href="http://laurierentrepreneur.ca/launchpad/" class="portfolio-link image-iframe">
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img src="img/My Organizations/Launch Pad.jpeg" class="img-responsive" alt="">
+              </a>
+              <div class="portfolio-caption">
+                <h4>Entreprenur in Residence (ConNextor), Velocity</h4>
+                <div class="portfolio-description">
+                    Launchpad is a university incubator that accelerate innovation with mentorship and other support
+                such as office space</div>
               </div>
             </div>
           </div>
@@ -266,7 +415,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading"> Some Highlights</h2>
+          <h2 class="section-heading"> Highlights of my journey</h2>
         </div>
       </div>
       <div class="row">
@@ -427,16 +576,21 @@
           <div class="col-lg-8 col-lg-offset-2">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2>Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-responsive img-centered" src="img/portfolio/dreams.png" alt="">
-              <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+              <h2>Building a World Where Students’ Initiatives are Seen, Valued & Supported</h2>
+              <p class="item-intro text-muted">ConNextor is a collaborative platform that nurture the new generation of global shapers, makers and leaders through innovative projects. It tracks user accomplishment throughout and match them up with mentors that help them building and growing </p>
+              <img class="img-responsive img-centered" src="img/portfolio/talents.png" alt="">
               <p>
-                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">connextor.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+              -Started ConNextor in Januarary, 2015 and has grown from me and my CTO as a side project to a team of 7 bright developers, designers and marketers
+              <br>-Organized our first pilot program in August with 9 exciting companies including Uber, Square and Quora
+              <br>-Interviewed over 50 engineering, design and business students (our direct users) as well as 15 organizations (our direct customers) for Branding and User Experience validation <br>-Grown our student network to over 10,000 top notch talents from schools like MIT, UC Berkeley, through relationships with other student organizations, institutions and conferences , uWaterloo etc.</p>
+              <img class="img-responsive img-centered" src="img/portfolio/projects.png" alt="">
+              <img class="img-responsive img-centered" src="img/portfolio/profiles.png" alt="">
+
+              <p>We've worked with:
+                <img class="img-responsive img-centered" src="img/portfolio/company-logos.png" alt="">
+                <strong>Check out more at </strong><a href="https://www.connextor.co">connextor.co</a></p>
               <ul class="list-inline">
-                <li>Date: July 2014</li>
-                <li>Client: Round Icons</li>
-                <li>Category: Graphic Design</li>
+                <li>Date: January 2015- Present</li>
               </ul>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
             </div>
@@ -459,11 +613,22 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
             <div class="modal-body">
-              <h2>Project Heading</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-responsive img-centered" src="img/portfolio/startup-framework-preview.png" alt="">
-              <p><a href="http://designmodo.com/startup/?u=787">Startup Framework</a> is a website builder for professionals. Startup Framework contains components and complex blocks (PSD+HTML Bootstrap themes and templates) which can easily be integrated into almost any design. All of these components are made in the same style, and can easily be integrated into projects, allowing you to create hundreds of solutions for your future projects.</p>
-              <p>You can preview Startup Framework <a href="http://designmodo.com/startup/?u=787">here</a>.</p>
+              <h2>Reinventing How We Support Charities</h2>
+              <p class="item-intro text-muted">Skill Based Volunteering Dating Website with Incentives meets Transparency Centered Non Profit Kickstarter</p>
+              <img class="img-responsive img-centered" src="img/portfolio/soapbox1.png" alt="">
+              <p>Accomplished between Oct. ‘14 to Dec ‘14 via offline programs:<br>
+                <br>-109 charities including Salvation Army
+
+                <br>- 611 volunteers from Uber, Google, UN etc.
+
+                <br>-Established relationships with over 10 brands including Unilever
+
+                <br>-Secured fiscal sponsorship to temporarily issue tax receipts</p>
+
+                <br>
+                <br>
+                Soapbox would be brought to UN as part of its milenium development goal and integrate with their volunteer network in over 130 countries
+              </p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
             </div>
           </div>
@@ -485,12 +650,27 @@
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2">
             <div class="modal-body">
-              <!-- Project Details Go Here -->
-              <h2>Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-responsive img-centered" src="img/portfolio/treehouse-preview.png" alt="">
-              <p>Treehouse is a free PSD web template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. This is bright and spacious design perfect for people or startup companies looking to showcase their apps or other projects.</p>
-              <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/treehouse-free-psd-web-template/">FreebiesXpress.com</a>.</p>
+              <h2>A customized COMBINATION OF EXCITEMENTS​ for small business</h2>
+              <p class="item-intro text-muted">DELIVERING THE FINEST SMALL-MEDIUM BUSINESS MARKETING</p>
+              <img class="img-responsive img-centered" src="img/My Startups/teamspice.png" alt="">
+              <p>Managed a team of 6 elite marketers and designers with 15 freelancers in design and development to offer:<br>
+              HOSPITALITY MARKETING 
+              <br>BUSINESS ANALYSIS
+<br>-MARKETING CONSULTING
+<br>-CORPORATE SOCIAL RESPONSIBILITY CONSULTING
+<br>-WEB DESIGN
+<br>-LOGO
+<br>-POSTER
+<br>-BANNER
+<br>-REVIEW SITE MANAGEMENT
+<br>-SOCIAL MEDIA SETUP
+<br>-SOCIAL MEDIA ENGAGEMENT 
+<br>-CAMPUS ADVERTISING
+<br>-PHOTOGRAPHY AND EDITING
+<br>-VIDEOGRAPHY
+<br>-EVENT PLANNING
+<br>-Offline Marketing
+              </p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
             </div>
           </div>
@@ -498,7 +678,7 @@
       </div>
     </div>
   </div>
-
+  
   <!-- Portfolio Modal 4 -->
   <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
@@ -513,11 +693,43 @@
           <div class="col-lg-8 col-lg-offset-2">
             <div class="modal-body">
               <!-- Project Details Go Here -->
-              <h2>Project Name</h2>
-              <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-              <img class="img-responsive img-centered" src="img/portfolio/golden-preview.png" alt="">
-              <p>Start Bootstrap's Agency theme is based on Golden, a free PSD website template built by <a href="https://www.behance.net/MathavanJaya">Mathavan Jaya</a>. Golden is a modern and clean one page web template that was made exclusively for Best PSD Freebies. This template has a great portfolio, timeline, and meet your team sections that can be easily modified to fit your needs.</p>
-              <p>You can download the PSD template in this portfolio sample item at <a href="http://freebiesxpress.com/gallery/golden-free-one-page-web-template/">FreebiesXpress.com</a>.</p>
+              <h2>Analytics Marketing and Product Management</h2>
+              <p class="item-intro text-muted"Uken Games</p>
+              <img class="img-responsive img-centered" src="img/portfolio/titans.jpg" alt="">
+              <p>-Increased Uken’s Ad revenue by over 40% through partnership & country distribution optimization<br>-
+                Acquired over millions of users with a small team of 3 for Titans and got app store featured in over 100 countries<br>-Managed digital distribution channels across 9 digital distribution channels including Facebook and Twitter and maintained the Cost per Install (CPI) 60% lower than average mid-core games’ CPI whilce keeping a 10% day 1 ROI<br>-Designed and initiated an influencer campaign with over 700 relevant influencers and over 12 million potential reach at no monetary cost<br>-Designed learning reporting system for user acquisition as well as management/analysis system for email & push notification </p>
+              <p>Check out more at <a href="http://www.uken.com">Uken Games</a>.</p>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div class="modal-body">
+              <!-- Project Details Go Here -->
+              <h2>Project Managememt & Marketing Specialist</h2>
+              <img class="img-responsive img-centered" src="img/portfolio/dytrem1.png" alt="">
+              <p><br>-Executed different ongoing projects and communicated with various levels of management within the corporation and with clients; eg. Made a three-year workforce plan for a large telecommunication firm with over 1500 local employees from data analysis to strategic planning
+
+<br>-Led the company into the Chinese market with market know-how and has generated warm leads over 2 million potential value of closing
+
+<br>-Developed strategic marketing plan and managed content creation to enhance company awareness; saved the company over $20,000 on video production 
+
+</p>
               <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
             </div>
           </div>
@@ -590,6 +802,7 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/cbpAnimatedHeader.js"></script>
+  <script type="text/javascript" src="js-plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Contact Form JavaScript -->
   <script src="js/jqBootstrapValidation.js"></script>
@@ -597,6 +810,14 @@
 
   <!-- Custom Theme JavaScript -->
   <script src="js/myscript.js"></script>
+
+  <script language="javascript" type="text/javascript">
+    $(window).load(function() {
+      setTimeout(function(){
+        $('#loading').hide();
+      },2000);
+    });
+  </script>
 
 </body>
 
