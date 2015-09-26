@@ -34,7 +34,7 @@ $(document).ready(function() {
     setInterval(function() {
         cover_transition()
     }
-    , 1500);
+    , 2000);
 
     // Magnific popup
     magnific_pop_up();

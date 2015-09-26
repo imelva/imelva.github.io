@@ -56,14 +56,14 @@
               <circle r="3" cx="13"></circle>
             </g>
             <g id="rays">
-              <use xlink:href="#ray" transform="rotate(315) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(270) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(225) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(180) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(135) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(90) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(45) translate(70)"></use>
-              <use xlink:href="#ray" transform="rotate(0) translate(70)"></use>
+			<use xlink:href="#ray" transform="rotate(315) translate(70)" -webkit-transform="rotate(315) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(270) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(270) translate(70)" -webkit-transform="rotate(270) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(225) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(225) translate(70)" -webkit-transform="rotate(225) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(180) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(180) translate(70)" -webkit-transform="rotate(180) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(135) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(135) translate(70)" -webkit-transform="rotate(135) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(90) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(90) translate(70)" -webkit-transform="rotate(90) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(45) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(45) translate(70)" -webkit-transform="rotate(45) translate(70)"></use>
+              <use xlink:href="#ray" transform="rotate(0) translate(70)"></use>		              <use xlink:href="#ray" transform="rotate(0) translate(70)" -webkit-transform="rotate(0) translate(70)"></use>
             </g>
           </g>
         </g>
@@ -110,17 +110,19 @@
     <div class="container">
       <div class="intro-text">
         <div class="intro-title">Hi I'm Elva</div>
-        <div class="hero-container"> 
-          <div class="cover-hero-caption">I am a</div>
-          <div id="cover-hero-content">
-            <div class="cover-hero-item cover-hero-item-active">Marketer</div>
-            <div class="cover-hero-item cover-hero-item-inactive">Product Manager</div>
-            <div class="cover-hero-item cover-hero-item-inactive">Data Analyst</div>
-            <div class="cover-hero-item cover-hero-item-inactive">Entreprenur</div>
-            <div class="cover-hero-item cover-hero-item-inactive">UX Designer</div>
-            <div class="cover-hero-item cover-hero-item-inactive">Event Planner</div>
-          </div>
-        </div>
+        <div class="row hero-container"> 	          
+            <div class="col-md-6 col-md-push-1 cover-hero-caption">I am a</div>		          
+            <div class="cover-hero-content-container col-md-6 col-md-pull-1">	         
+                <div id="cover-hero-content">	              
+                    <div class="cover-hero-item cover-hero-item-active">Marketer</div>
+                    <div class="cover-hero-item cover-hero-item-inactive">Data Analyst</div>		              
+                    <div class="cover-hero-item cover-hero-item-inactive">Product Manager</div>
+                    <div class="cover-hero-item cover-hero-item-inactive">Entreprenur</div>		              
+                    <div class="cover-hero-item cover-hero-item-inactive">UX Designer</div>		              
+                    <div class="cover-hero-item cover-hero-item-inactive">Event Planner</div>	
+                </div>
+          	 </div>
+        </div>	              
         <div class="intro-button">
           <a href="#world" class="page-scroll btn-upright" style="text-decoration: none;">Knock Knock</a>
         </div>

@@ -1115,38 +1115,42 @@ body {
 
 .center-container {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50%;		 
+  left: 50%;		  
+  transform: translate(-50%, -50%);		
   -webkit-transform: translate(-50%, -50%);
-}
+}		
 
 .hero-container {
     color: white;
-    display: inline-block;
-	position: relative;
-	height: 150px;
+    position: relative;
+	height: 150px;	
+}
+.cover-hero-caption {
+    color: white;		    
+    font-size: 60px;		    
+	 height: 120px;		    
+    position: relative;		 	
 }
 
-.cover-hero-caption {
-    color: white;
-    font-size: 72px;
-	 height: 100px;
-    display: inline-block;
-    position: relative;
-    bottom: 32px;
+.cover-hero-content-container {
+	margin-bottom: 80px; 
+	position: relative;
+	width: auto;
 }
 
 #cover-hero-content {
     color: white;
-    height: 100px;
-    border-bottom: 2px solid;
-    font-size: 68px;
+    height: 85px;
+	position: absolute;
+	border-bottom: 3px solid; 
+	top: 50%;
+	bottom: 0;
+    font-size: 60px;
     text-align: left;
-    overflow: hidden;
-    display: inline-block;
-    margin-left: 20px;
-}
+    position: relative;
+    overflow: hidden;		
+}		
 
 .cover-hero-item {
     -webkit-transform: translateY(100%);
@@ -1164,13 +1168,13 @@ body {
 .cover-hero-item-active {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
-    transform: translateY(0)
+    transform: translateY(0)；
 }
 
 .cover-hero-item-hidden {
     -webkit-transform: translateY(-100%);
     -moz-transform: translateY(-100%);
-    transform: translateY(-100%)
+    transform: translateY(-100%)；
 }
 
 iframe {
