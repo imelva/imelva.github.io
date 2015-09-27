@@ -26,7 +26,7 @@ function cover_transition() {
           }
           , 0)
       }
-      , 250)
+      , 150)
   }
   , 0);
 }

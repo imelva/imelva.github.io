@@ -383,14 +383,14 @@ section h3.section-subheading {
 }
 
 .portfolio-img {
-	height: 200px;
+	height: auto;
 	width:100%;
 }
 
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
-    height: 350px;
+    height: 340px;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -1135,24 +1135,24 @@ body {
     color: white;		    
     font-size: 60px;		    
 	 height: 120px;		    
-    position: relative;		 	
+    position: relative;
+	padding-right: 15px;	
+	bottom: 2px;	 	
 }
 
 .cover-hero-content-container {
 	margin-bottom: 80px; 
-	position: relative;
 	width: auto;
+	position: absolute;
+	top: 50%;
+	bottom: 0;
 }
 
 #cover-hero-content {
     color: white;
     height: 85px;
-	position: absolute;
 	border-bottom: 3px solid; 
-	top: 50%;
-	bottom: 0;
     font-size: 60px;
-    text-align: left;
     position: relative;
     overflow: hidden;		
 }		
