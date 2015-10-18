@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Foodie's Love Letter</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylesheet.css" rel="stylesheet">
+  <link href="css/foodie.css" rel="stylesheet">
+  <link href="css/sunrise.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body id="page-top" class="index">
+
+  <!--Main image-->
+  <div class="main-container main-img">
+  </div>
+
+  <!--Short message-->
+  <div class="container">
+    <!--Sections-->
+    <div class="row sections section1">
+      <p class="section-txt"> Search by ingredients, recipes, occasions etc.</p>
+      <div class="section-img"></div>
+    </div>
+    <div class="row sections section2">
+      <p class="section-txt">Pick the best recipe for you from others' feedbacks</p>
+      <div class="section-img"></div>
+    </div>
+    <div class="row sections section3">
+      <p class="section-txt"> Share your work with the community and beyond</p>
+      <div class="section-img"></div>
+    </div>
+    <div class="row sections section4">
+      <p class="section-txt"> Learn from clear step-by-step instructions/p>
+      <div class="section-img"></div>
+    </div>
+  </div>
+
+  <div class="sections section6">
+    <div class="section-img">
+      <div class="container">
+        <div class="row">
+          <p class="section-txt">No one was born a cook but everyone can cook</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <span class="copyright">Copyright &copy; Elva's World 2015</span>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline social-buttons">
+            <li><a href="https://twitter.com/young_elva" target="_blank"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://ca.linkedin.com/in/elvayoung" target="_blank"> <i class="fa fa-linkedin"></i>
+              </a>
+            </li>
+            <li><a href="http://elvay.lofter.com" target="_blank"><i class="fa fa-paint-brush"></i></a>
+            </li>
+            <li><a href="mailto:elva@connextor.co" target="_blank"><i class="fa fa-envelope"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <ul class="list-inline quicklinks">
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script type="text/javascript">
+    // Fades in elements when they are first seen
+    function fadeInSectionImages() {
+        var distFromTop = $(window).scrollTop();
+        var viewPortSize = $(window).height();
+        $('.fade-in').each(function (i) {
+            if (distFromTop >= $(this).offset().top - viewPortSize + triggerPad) {
+                $(this).removeClass('fade-in');
+                $(this).css('visibility', 'visible').hide().fadeIn();
+            }
+        });
+    }
+    $(window).scroll(fadeInSectionImages);
+  </script>
+
+</body>
+
+</html>

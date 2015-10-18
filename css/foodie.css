@@ -1,0 +1,212 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Raleway-semibold';
+    src: url('../fonts/Raleway-SemiBold.ttf');
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Raleway;
+  position: relative;
+}
+
+p {
+  font-family: Raleway;
+  letter-spacing: 2px;
+}
+
+ > .container {
+  background-color: white;
+}
+
+ .ill-background-breaker {
+  background-color: #FFF9C6;
+}
+
+ .ill-background-breaker .announcement {
+  padding: 10px 0;
+}
+
+ .ill-background-breaker .announcement span {
+  font-size: 18px;
+}
+
+ .main-container.main-img {
+  background: url("../img/foodie/main.png") no-repeat;
+  background-size: cover;
+  min-height: 619px;
+  padding-top: 200px;
+}
+
+ .main {
+  text-align: center;
+}
+
+ .main .main-txt {
+  padding: 0 20px 0 20px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  font-weight: 500;
+  color: DarkSalmon;
+}
+
+ .main .main-txt .alt-theme {
+  color: #EFC94C;
+}
+
+ .main .main-small-txt {
+  padding: 20px 20px 0 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: white;
+}
+
+ .main .main-small-txt .alt-theme {
+  color: #EFC94C;
+}
+
+ .main .main-small-txt a,  .main .main-small-txt a:link,  .main .main-small-txt a:visited {
+  color: white;
+}
+
+ .main .main-small-txt a:focus,  .main .main-small-txt a:hover {
+  color: #EFC94C;
+  text-decoration: none;
+}
+
+ .main .stay-tuned-button {
+  margin-top: 35px;
+  font-weight: 500;
+}
+
+ .pop-up-container .video-container {
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  max-width: 800px;
+}
+
+ .pop-up-container .video-container .iframe {
+  width: 100%;
+  height: 100%;
+}
+
+ .about {
+  text-align: center;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+}
+
+ .about p.title {
+  font-size: 48px;
+  color: #EFC94C;
+}
+
+ .about p.description {
+  font-size: 26px;
+}
+
+ .separator {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+ .sections {
+  padding-top: 60px;
+}
+
+ .sections p.section-txt {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+ .sections .section-img {
+  background: center no-repeat;
+  background-size: cover;
+  min-height: 850px;
+  height: auto;
+}
+
+ .fade-in {
+  visibility: hidden;
+}
+
+ .section1 .section-img {
+  background-image: url("../img/foodie/section1.png");
+}
+
+ .section2 .section-img {
+  background-image: url("../img/foodie/section2.png");
+}
+
+ .section3 .section-img {
+  background-image: url("../img/foodie/section3.png");
+}
+
+ .section4 .section-img {
+  background-image: url("../img/foodie/section4.png");
+}
+
+ .section5 .logos {
+  width: 100%;
+}
+
+ .section5 .logos .logo-row {
+  height: 150px;
+  width: 100%;
+}
+
+ .section5 .logos .logo-row .logo-container {
+  padding: 5px;
+}
+
+ .section5 .logos .logo-row .logo-container .logo {
+  background: center no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
+ .section6 .section-img {
+  background-image: url("../img/foodie/section6.png");
+  background-size: cover !important;
+  min-height: 200px !important;
+}
+
+ .section6 p.section-txt {
+  color: white !important;
+  padding-top: 80px;
+}
+
+ .stay-tuned {
+  height: auto;
+  text-align: center;
+  background: white;
+}
+
+ .stay-tuned > .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+ .stay-tuned p.form-title {
+  font-size: 30px;
+}
+
+ .stay-tuned h5 {
+  color: #888888;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+ .stay-tuned .invite-submit {
+  margin: 5px 5px 5px 5px;
+}
