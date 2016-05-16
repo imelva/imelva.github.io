@@ -8,7 +8,7 @@
 
 function cover_transition() {
   var c = $(".cover-hero-item:nth-child(" + cover_slide + ")");
-  if (cover_slide == 6) {
+  if (cover_slide == 5) {
       var b = $(".cover-hero-item:nth-child(1)");
       cover_slide = 1
   } else {
