@@ -39,6 +39,17 @@ $(document).ready(function() {
     // Magnific popup
     magnific_pop_up();
 
+    var $startup = $(".Startup").fadeIn(450);
+    $('#parent > div').not($startup).hide();
+
+    var $internship = $(".Internship").fadeIn(450);
+    $('#parent > div').not($internship).hide();
+
+    var $org = $(".Organization").fadeIn(450);
+    $('#parent > div').not($org).hide();
+
+    var $highlights = $(".Highlights").fadeIn(450);
+    $('#parent > div').not($highlights).hide();
 });
 
 function magnific_pop_up() {
