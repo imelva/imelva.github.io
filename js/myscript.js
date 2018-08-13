@@ -103,7 +103,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 // Filtering experiences
-var $btns = $('.btn').click(function() {
+var $btns = $('.portfolio-btn').click(function() {
   if (this.id == 'All') {
     $('#parent > div').fadeIn(450);
   } else {
